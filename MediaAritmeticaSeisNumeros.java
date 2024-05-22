@@ -13,7 +13,7 @@ public class Main {
             soma += fat;
         }
 
-        double media = (double) soma / 6;
+        double media = (int) soma / 6;
 
         System.out.println("A média de 6 números é: " + media);
 
