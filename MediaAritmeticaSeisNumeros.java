@@ -5,29 +5,16 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner ref = new Scanner(System.in);
+        int soma = 0;
 
-        System.out.println("Insira um número inteiro: ");
-        int numUm = ref.nextInt();
+        for (int i = 1; i <= 6; i++){
+            System.out.println("\nInsira o " + i + "° número inteiro: ");
+            int fat = ref.nextInt();
+            soma += fat;
+        }
 
-        System.out.println("Insira um número inteiro: ");
-        int numDois = ref.nextInt();
+        double media = (double) soma / 6;
 
-        System.out.println("Insira um número inteiro: ");
-        int numTres = ref.nextInt();
-
-        System.out.println("Insira um número inteiro: ");
-        int numQuatro = ref.nextInt();
-
-        System.out.println("Insira um número inteiro: ");
-        int numCinco = ref.nextInt();
-
-        System.out.println("Insira um número inteiro: ");
-        int numSeis = ref.nextInt();
-
-        double soma = numUm + numDois + numTres + numQuatro + numCinco + numSeis;
-        
-        double media = soma / 6;
-        
         System.out.println("A média de 6 números é: " + media);
 
     }
